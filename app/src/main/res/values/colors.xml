@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="black">#FF000000</color>
+    <color name="dark_gray">#1A1A1A</color>
+    <color name="light_gray">#E6E6E6</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="habit_0">@color/design_default_color_background</color>
+    <color name="habit_1">#FFB2B2</color>
+    <color name="habit_2">#FFBD99</color>
+    <color name="habit_3">#FFD980</color>
+    <color name="habit_4">#F9FF80</color>
+    <color name="habit_5">#CCFF80</color>
+    <color name="habit_6">#9FFF80</color>
+    <color name="habit_7">#80FF8C</color>
+    <color name="habit_8">#80FFB9</color>
+    <color name="habit_9">#80FFE5</color>
+    <color name="habit_10">#80ECFF</color>
+    <color name="habit_11">#99CCFF</color>
+    <color name="habit_12">#B2BEFF</color>
+    <color name="habit_13">#C2B2FF</color>
+    <color name="habit_14">#DDB2FF</color>
+    <color name="habit_15">#F7B2FF</color>
+    <color name="habit_16">#FFB2EC</color>
+    <color name="habit_17">#FF99C2</color>
+</resources>
