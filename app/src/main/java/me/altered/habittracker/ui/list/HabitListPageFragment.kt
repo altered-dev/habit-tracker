@@ -26,9 +26,9 @@ class HabitListPageFragment(val type: Habit.Type) : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         FragmentHabitListPageBinding.bind(view).run {
             habitList.layoutManager = LinearLayoutManager(view.context)
-            habitList.adapter = HabitListAdapter(model[type], type)
-            model[type].observe(viewLifecycleOwner) {
-                println(it.joinToString("\n"))
+            val data = model[type]
+            habitList.adapter = HabitListAdapter(data, type)
+            data.observe(viewLifecycleOwner) {
                 habitList.adapter!!.notifyDataSetChanged()
             }
         }

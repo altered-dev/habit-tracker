@@ -22,7 +22,7 @@ class HabitListViewModel : ViewModel() {
 
 //    fun getById(id: Int) = habits.value?.find { it.id == id }
 
-    fun getById(id: Int) = dao.getById(id).value
+    fun getById(id: Int) = dao.getById(id)
 
     infix fun update(habit: Habit) = dao update habit
 

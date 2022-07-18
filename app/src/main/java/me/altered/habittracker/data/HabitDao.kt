@@ -9,7 +9,7 @@ interface HabitDao {
     fun getAll(): LiveData<List<Habit>>
 
     @Query("SELECT * FROM habit WHERE id == :id")
-    fun getById(id: Int): LiveData<Habit>
+    fun getById(id: Int): Habit?
 
     @Query("SELECT * FROM habit WHERE type == :type")
     fun getByType(type: Habit.Type): LiveData<List<Habit>>
