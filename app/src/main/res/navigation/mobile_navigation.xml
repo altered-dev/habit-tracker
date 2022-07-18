@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_list">
+
+    <fragment
+        android:id="@+id/bad_habits"
+        android:name="me.altered.habittracker.ui.list.HabitListPageFragment"
+        android:label="fragment_habit_list_page"
+        tools:layout="@layout/fragment_habit_list_page">
+        <argument
+            android:name="type"
+            app:argType="me.altered.habittracker.data.Habit$Type"
+            android:defaultValue="BAD" />
+        <action
+            android:id="@+id/action_bad_habits_to_habitFragment"
+            app:destination="@id/habitFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_list"
+        android:name="me.altered.habittracker.ui.list.HabitListFragment"
+        android:label="Список привычек"
+        tools:layout="@layout/habit_list_fragment" >
+        <action
+            android:id="@+id/action_nav_list_to_bad_habits"
+            app:destination="@id/bad_habits" />
+        <action
+            android:id="@+id/action_nav_list_to_good_habits"
+            app:destination="@id/good_habits" />
+    </fragment>
+    <fragment
+        android:id="@+id/good_habits"
+        android:name="me.altered.habittracker.ui.list.HabitListPageFragment"
+        android:label="fragment_habit_list_page"
+        tools:layout="@layout/fragment_habit_list_page" >
+        <argument
+            android:name="type"
+            app:argType="me.altered.habittracker.data.Habit$Type"
+            android:defaultValue="GOOD" />
+        <action
+            android:id="@+id/action_good_habits_to_habitFragment"
+            app:destination="@id/habitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="me.altered.habittracker.ui.about.AboutFragment"
+        android:label="О приложении"
+        tools:layout="@layout/fragment_about" />
+    <dialog
+        android:id="@+id/habitFragment"
+        android:name="me.altered.habittracker.ui.habit.HabitFragment"
+        android:label="fragment_habit"
+        tools:layout="@layout/fragment_habit" />
+</navigation>

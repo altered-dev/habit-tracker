@@ -5,13 +5,10 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-
     <color name="black">#FF000000</color>
-    <color name="dark_gray">#1A1A1A</color>
-    <color name="light_gray">#E6E6E6</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="habit_0">@color/design_default_color_background</color>
+    <color name="habit_0">@color/design_default_color_surface</color>
     <color name="habit_1">#FFB2B2</color>
     <color name="habit_2">#FFBD99</color>
     <color name="habit_3">#FFD980</color>
@@ -29,4 +26,5 @@
     <color name="habit_15">#F7B2FF</color>
     <color name="habit_16">#FFB2EC</color>
     <color name="habit_17">#FF99C2</color>
+    <color name="divider">#49454F</color>
 </resources>
